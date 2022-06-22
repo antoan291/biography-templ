@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+
+
+//fonts 
+$latin-family: 'Anek Latin', sans-serif;
+
+$roboto-family: 'Roboto', sans-serif;
+
+//colors 
+$background-color:#000; 
+$desc-color:#8e96a3;
+$text-color:#fff;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: $latin-family;
+    background-color: $background-color;
+   
+ 
+}
+
+
+//Navbar
+header{
+    padding-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;;
+    i{
+        font-size:20px;
+        color:#fff;
+    }
+}
+
+//Biography Section ,information with photo and paragraph and social media
+.biography-information{
+  
+    margin:5rem auto;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .title{
+        justify-content: center;
+        display: grid;
+        color:#fff;
+        font-size:50px;
+        margin:20px;
+    }
+    h2{
+        margin: 20px;
+        color:$text-color;
+    }
+
+
+    .bio-img{
+        align-items: center;
+        justify-content: center;
+        width:280px;
+        height:300px;
+        border-radius:130px;
+    }
+    p{
+        font-size:20px;
+        width:600px;
+        color:$desc-color;
+      text-align: justify;
+    }
+    
+    .social-media-icons{
+        margin-top:25px;
+        align-content: space-around;
+        color: $text-color;
+        // background-color: $text-color;
+        svg{
+            width:25px;
+            height:25px;
+            margin-left:20px;
+            }
+        }
+
+        @media (max-width: 700px){
+            p{
+               padding-left:20px;
+               padding-right:20px;
+               font-size: 18px; 
+               width:100%;
+
+            }
+        }
+    }
+
+
+
+    //About Us two columns
+    .about-us{
+        color:$text-color;
+        display: flex;
+        justify-content: center;
+        margin-top:150px;
+        gap:50px;
+        .title-about{
+            width:700px;
+            h1{
+                text-align:left;
+                font-size: 65px;;
+            }
+            h4{
+                width:50px;
+                font-size:30px;
+            }
+        }
+
+
+        .desc-about{
+            width:700px;
+                
+            h2{
+                font-size:30px;
+                margin-bottom:15px;
+            }
+            p{
+                line-height:1.5;
+            }
+            .chat{
+                display: flex;
+                margin-top:20px;
+                font-size:20px;
+                h4{
+                    font-weight: bold;
+                    margin-left:10px;
+                }
+
+            }
+        }
+
+
+        @media (max-width: 700px){
+                padding:20px;
+                flex-direction: column;;
+            }   
+        }
+
+
+
+        //Gallery section with number,title, gallery of pictures and button Learn More
+    .gallery-container{
+        margin-top:10em;
+        display: grid;
+        flex-direction: column;
+        color:$text-color;
+        justify-content: center;
+
+        #number-1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 800;
+        }
+        hr{
+            margin:40px;
+        }
+        #gallery-title{
+            margin: auto;
+            text-align: center;
+            width:70vh;
+            font-size: 45px;
+        }
+        i{
+            margin-top:60px;
+            font-size:50px;
+            text-align: center;
+        }
+        h3{
+            margin:50px;
+            text-align: center;
+            font-size:23px;
+        }
+
+        .pictures-gallery{
+            display:grid;
+            gap:50px;
+            padding:10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 60px;
+            img{
+                border-radius: 20px;
+                width:500px;
+                height:500px;
+            }
+        }
+
+        button{
+            color:$text-color;
+            background-color: $background-color;
+            // width:170px;
+            margin:auto;
+            margin-bottom: 50px;
+            font-size: 20px;
+            padding:20px 80px 20px 80px;
+        
+            &:hover{
+                background-color: $text-color;
+                color:$background-color;
+            }
+        }
+    }
+
+
+    //Motivation paragraphs ,2 columns
+    .motivation{
+        margin-top:100px;
+        color:$text-color;
+        display:flex;
+        justify-content: center;
+        column-gap:60px;
+
+        .motivation-desc{
+            width:700px;
+            font-size:19px;
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+
+        .desc-signature{
+            width:700px;
+            font-size:21px;
+
+            img{
+                margin-top:25px;
+                width:200px;
+            }
+        }
+    }
+
+
+    //Contact Section with information about person telephone,address ...
+    .contact-us{
+        color:$text-color;
+        margin-top:13vh;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom:10vh;
+
+        h1{
+            font-size:60px;
+        }
+
+        .phone-inf{
+            color:$text-color;
+            margin-top:20px;
+            
+            display:flex;
+            justify-content: center;
+        }
+        img{
+            margin:30px;
+            width:160px;
+            height:160px;
+            border-radius: 80px;
+    }
+        hr{
+            width:200px;
+            margin:auto;
+            margin-bottom: 20px;
+            margin-top: 20px;;
+            height:10px;
+            background-color: $text-color;
+            border-radius: 5px;
+
+        }
+        h5{
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size:17px;
+            margin:17px;
+        }
+    }
+
+
+    //Footer
+    .footer{
+        color:$text-color;
+        background-color: #383838;
+        height:130px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+            width:230px;
+        }
+    }

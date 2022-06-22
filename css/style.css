@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anek Latin", sans-serif;
+  background-color: #000;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.biography-information {
+  margin: 5rem auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.biography-information .title {
+  justify-content: center;
+  display: grid;
+  color: #fff;
+  font-size: 50px;
+  margin: 20px;
+}
+.biography-information h2 {
+  margin: 20px;
+  color: #fff;
+}
+.biography-information .bio-img {
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 300px;
+  border-radius: 130px;
+}
+.biography-information p {
+  font-size: 20px;
+  width: 600px;
+  color: #8e96a3;
+  text-align: justify;
+}
+.biography-information .social-media-icons {
+  margin-top: 25px;
+  align-content: space-around;
+  color: #fff;
+}
+.biography-information .social-media-icons svg {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+@media (max-width: 700px) {
+  .biography-information p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+.about-us {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 50px;
+}
+.about-us .title-about {
+  width: 700px;
+}
+.about-us .title-about h1 {
+  text-align: left;
+  font-size: 65px;
+}
+.about-us .title-about h4 {
+  width: 50px;
+  font-size: 30px;
+}
+.about-us .desc-about {
+  width: 700px;
+}
+.about-us .desc-about h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.about-us .desc-about p {
+  line-height: 1.5;
+}
+.about-us .desc-about .chat {
+  display: flex;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.about-us .desc-about .chat h4 {
+  font-weight: bold;
+  margin-left: 10px;
+}
+@media (max-width: 700px) {
+  .about-us {
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+.gallery-container {
+  margin-top: 10em;
+  display: grid;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+}
+.gallery-container #number-1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+.gallery-container hr {
+  margin: 40px;
+}
+.gallery-container #gallery-title {
+  margin: auto;
+  text-align: center;
+  width: 70vh;
+  font-size: 45px;
+}
+.gallery-container i {
+  margin-top: 60px;
+  font-size: 50px;
+  text-align: center;
+}
+.gallery-container h3 {
+  margin: 50px;
+  text-align: center;
+  font-size: 23px;
+}
+.gallery-container .pictures-gallery {
+  display: grid;
+  gap: 50px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+}
+.gallery-container .pictures-gallery img {
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+}
+.gallery-container button {
+  color: #fff;
+  background-color: #000;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding: 20px 80px 20px 80px;
+}
+.gallery-container button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.motivation {
+  margin-top: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.motivation .motivation-desc {
+  width: 700px;
+  font-size: 19px;
+}
+.motivation .motivation-desc h2 {
+  margin-bottom: 20px;
+}
+.motivation .desc-signature {
+  width: 700px;
+  font-size: 21px;
+}
+.motivation .desc-signature img {
+  margin-top: 25px;
+  width: 200px;
+}
+
+.contact-us {
+  color: #fff;
+  margin-top: 13vh;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+.contact-us h1 {
+  font-size: 60px;
+}
+.contact-us .phone-inf {
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.contact-us img {
+  margin: 30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+}
+.contact-us hr {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.contact-us h5 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.contact-us p {
+  font-size: 17px;
+  margin: 17px;
+}
+
+.footer {
+  color: #fff;
+  background-color: #383838;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  text-align: center;
+  width: 230px;
+}/*# sourceMappingURL=style.css.map */
