@@ -88,9 +88,8 @@ header{
         }
 
         @media (max-width: 700px){
+            padding:20px;
             p{
-               padding-left:20px;
-               padding-right:20px;
                font-size: 18px; 
                width:100%;
 
@@ -144,8 +143,30 @@ header{
 
 
         @media (max-width: 700px){
-                padding:20px;
-                flex-direction: column;;
+                flex-direction: column;
+             
+                   .title-about{
+                    width:100%;
+                   
+                    
+                    h1{
+                        font-size:40px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+                    h4{
+                        
+                        font-size:20px;
+                        display:none;
+                        // margin:auto;
+                    }
+                   }
+
+                   .desc-about{
+                    width:100%;
+                    padding:20px;
+                   }
+                
             }   
         }
 
@@ -154,10 +175,10 @@ header{
         //Gallery section with number,title, gallery of pictures and button Learn More
     .gallery-container{
         margin-top:10em;
-        display: grid;
-        flex-direction: column;
         color:$text-color;
-        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        gap:40px;
 
         #number-1{
             text-align: center;
@@ -165,31 +186,34 @@ header{
             font-weight: 800;
         }
         hr{
-            margin:40px;
+            
+           width:100vh;
+           margin:auto;
         }
+
         #gallery-title{
-            margin: auto;
+            margin:auto;
             text-align: center;
             width:70vh;
             font-size: 45px;
         }
-        i{
-            margin-top:60px;
-            font-size:50px;
+        .arrow{
             text-align: center;
+            font-size:50px;
+            
         }
         h3{
-            margin:50px;
             text-align: center;
             font-size:23px;
         }
-
+    
         .pictures-gallery{
-            display:grid;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
             gap:50px;
-            padding:10px;
-            grid-template-columns: 1fr 1fr 1fr;
             margin-bottom: 60px;
+
             img{
                 border-radius: 20px;
                 width:500px;
@@ -210,6 +234,25 @@ header{
                 background-color: $text-color;
                 color:$background-color;
             }
+        }
+
+        @media (max-width: 700px){
+            padding:20px;
+
+            hr{
+                width:100%;
+            }
+            #gallery-title{
+                font-size:35px;
+                width:100%;
+            }
+            .pictures-gallery{
+                flex-direction: column;
+                img{
+                    width:100%;
+                }
+            }
+            
         }
     }
 
@@ -239,6 +282,21 @@ header{
                 width:200px;
             }
         }
+
+        @media (max-width: 700px){
+            flex-direction: column;
+            padding:20px;   
+            gap:20px;
+            .motivation-desc{
+                width: 100%;
+                margin-bottom:40px;
+            }
+            .desc-signature{
+                width: 100%;
+
+            }
+        }
+
     }
 
 
@@ -246,6 +304,7 @@ header{
     .contact-us{
         color:$text-color;
         margin-top:13vh;
+        display:flex;
         flex-direction: column;
         text-align: center;
         margin-bottom:10vh;
@@ -255,14 +314,13 @@ header{
         }
 
         .phone-inf{
-            color:$text-color;
-            margin-top:20px;
-            
             display:flex;
             justify-content: center;
+            margin-top:20px;
+            margin-bottom:30px;
         }
         img{
-            margin:30px;
+            margin:auto;
             width:160px;
             height:160px;
             border-radius: 80px;
@@ -279,11 +337,12 @@ header{
         }
         h5{
             font-size: 23px;
+            margin-top:20px;
             margin-bottom: 20px;
         }
         p{
             font-size:17px;
-            margin:17px;
+            margin:5px;
         }
     }
 

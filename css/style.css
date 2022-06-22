@@ -64,9 +64,10 @@ header i {
   margin-left: 20px;
 }
 @media (max-width: 700px) {
+  .biography-information {
+    padding: 20px;
+  }
   .biography-information p {
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 18px;
     width: 100%;
   }
@@ -111,17 +112,32 @@ header i {
 }
 @media (max-width: 700px) {
   .about-us {
-    padding: 20px;
     flex-direction: column;
+  }
+  .about-us .title-about {
+    width: 100%;
+  }
+  .about-us .title-about h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .about-us .title-about h4 {
+    font-size: 20px;
+    display: none;
+  }
+  .about-us .desc-about {
+    width: 100%;
+    padding: 20px;
   }
 }
 
 .gallery-container {
   margin-top: 10em;
-  display: grid;
-  flex-direction: column;
   color: #fff;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .gallery-container #number-1 {
   text-align: center;
@@ -129,7 +145,8 @@ header i {
   font-weight: 800;
 }
 .gallery-container hr {
-  margin: 40px;
+  width: 100vh;
+  margin: auto;
 }
 .gallery-container #gallery-title {
   margin: auto;
@@ -137,21 +154,19 @@ header i {
   width: 70vh;
   font-size: 45px;
 }
-.gallery-container i {
-  margin-top: 60px;
-  font-size: 50px;
+.gallery-container .arrow {
   text-align: center;
+  font-size: 50px;
 }
 .gallery-container h3 {
-  margin: 50px;
   text-align: center;
   font-size: 23px;
 }
 .gallery-container .pictures-gallery {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
-  padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 60px;
 }
 .gallery-container .pictures-gallery img {
@@ -170,6 +185,24 @@ header i {
 .gallery-container button:hover {
   background-color: #fff;
   color: #000;
+}
+@media (max-width: 700px) {
+  .gallery-container {
+    padding: 20px;
+  }
+  .gallery-container hr {
+    width: 100%;
+  }
+  .gallery-container #gallery-title {
+    font-size: 35px;
+    width: 100%;
+  }
+  .gallery-container .pictures-gallery {
+    flex-direction: column;
+  }
+  .gallery-container .pictures-gallery img {
+    width: 100%;
+  }
 }
 
 .motivation {
@@ -195,10 +228,25 @@ header i {
   margin-top: 25px;
   width: 200px;
 }
+@media (max-width: 700px) {
+  .motivation {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .motivation .motivation-desc {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .motivation .desc-signature {
+    width: 100%;
+  }
+}
 
 .contact-us {
   color: #fff;
   margin-top: 13vh;
+  display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: 10vh;
@@ -207,13 +255,13 @@ header i {
   font-size: 60px;
 }
 .contact-us .phone-inf {
-  color: #fff;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .contact-us img {
-  margin: 30px;
+  margin: auto;
   width: 160px;
   height: 160px;
   border-radius: 80px;
@@ -229,11 +277,12 @@ header i {
 }
 .contact-us h5 {
   font-size: 23px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .contact-us p {
   font-size: 17px;
-  margin: 17px;
+  margin: 5px;
 }
 
 .footer {
