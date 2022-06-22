@@ -110,6 +110,14 @@ header i {
   font-weight: bold;
   margin-left: 10px;
 }
+@media (max-width: 1000px) {
+  .about-us {
+    padding: 20px;
+  }
+  .about-us .title-about h1 {
+    font-size: 60px;
+  }
+}
 @media (max-width: 700px) {
   .about-us {
     flex-direction: column;
@@ -186,6 +194,14 @@ header i {
   background-color: #fff;
   color: #000;
 }
+@media (max-width: 1000px) {
+  .gallery-container {
+    padding: 20px;
+  }
+  .gallery-container .pictures-gallery img {
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   .gallery-container {
     padding: 20px;
@@ -227,6 +243,16 @@ header i {
 .motivation .desc-signature img {
   margin-top: 25px;
   width: 200px;
+}
+@media (max-width: 1300px) {
+  .motivation {
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .motivation {
+    padding: 20px;
+  }
 }
 @media (max-width: 700px) {
   .motivation {

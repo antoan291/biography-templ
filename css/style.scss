@@ -141,6 +141,16 @@ header{
             }
         }
 
+        @media (max-width: 1000px) {
+            padding:20px;
+            .title-about{
+                
+                
+                h1{
+                    font-size:60px;
+                }
+            }
+        }
 
         @media (max-width: 700px){
                 flex-direction: column;
@@ -236,6 +246,17 @@ header{
             }
         }
 
+
+        @media (max-width: 1000px) {
+            padding:20px;
+            .pictures-gallery{
+                
+                img{
+                    width:100%;
+                }
+           }
+        }
+
         @media (max-width: 700px){
             padding:20px;
 
@@ -282,7 +303,14 @@ header{
                 width:200px;
             }
         }
-
+        @media (max-width: 1300px) {
+            padding:20px;
+           
+        }
+        @media (max-width: 1000px) {
+            padding:20px;
+           
+        }
         @media (max-width: 700px){
             flex-direction: column;
             padding:20px;   
