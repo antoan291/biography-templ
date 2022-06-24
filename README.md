@@ -1,7 +1,7 @@
 <h1>Flex Biography Template</h1>
 
 <h2>App Demo</h2>
-....
+https://biography-flex-templ.netlify.app/
 <hr>
 
 <h2>What it does?</h2>
