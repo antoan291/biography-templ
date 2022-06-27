@@ -17,6 +17,7 @@ header {
   align-items: center;
 }
 header i {
+  cursor: pointer;
   font-size: 20px;
   color: #fff;
 }
@@ -54,13 +55,14 @@ header i {
   text-align: justify;
 }
 .biography-information .social-media-icons {
-  margin-top: 35px;
+  margin-top: 50px;
   align-content: space-around;
   color: #fff;
 }
 .biography-information .social-media-icons svg {
-  width: 25px;
-  height: 25px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
 @media (max-width: 700px) {
@@ -83,7 +85,7 @@ header i {
 .about-us .title-about {
   width: 700px;
 }
-.about-us .title-about h1 {
+.about-us .title-about h2 {
   text-align: left;
   font-size: 65px;
 }
@@ -114,7 +116,7 @@ header i {
   .about-us {
     padding: 20px;
   }
-  .about-us .title-about h1 {
+  .about-us .title-about h2 {
     font-size: 60px;
   }
 }
@@ -137,6 +139,15 @@ header i {
   .about-us .desc-about {
     width: 100%;
     padding: 20px;
+  }
+  .about-us .desc-about h2 {
+    font-size: 40px;
+  }
+  .about-us .desc-about p {
+    font-size: 26px;
+  }
+  .about-us .desc-about .chat {
+    font-size: 26px;
   }
 }
 
@@ -206,7 +217,8 @@ header i {
     padding: 20px;
   }
   .gallery-container .pictures-gallery img {
-    width: 100%;
+    width: 80%;
+    height: 400px;
   }
 }
 @media (max-width: 700px) {
@@ -267,6 +279,9 @@ header i {
     padding: 20px;
     gap: 20px;
   }
+  .motivation p {
+    font-size: 26px;
+  }
   .motivation .motivation-desc {
     width: 100%;
     margin-bottom: 40px;
@@ -284,7 +299,7 @@ header i {
   text-align: center;
   margin-bottom: 10vh;
 }
-.contact-us h1 {
+.contact-us h4 {
   font-size: 60px;
 }
 .contact-us .phone-inf {
@@ -317,16 +332,34 @@ header i {
   font-size: 17px;
   margin: 5px;
 }
+@media (max-width: 600px) {
+  .contact-us p {
+    font-size: 24px;
+  }
+}
 
 .footer {
+  padding: 50px;
   color: #fff;
   background-color: #383838;
-  height: 130px;
+  height: 200px;
   display: flex;
+  font-size: 18px;
   justify-content: center;
   align-items: center;
 }
-.footer p {
-  text-align: center;
-  width: 230px;
+.footer a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .footer a {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
