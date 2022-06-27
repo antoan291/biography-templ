@@ -32,6 +32,7 @@ header{
     justify-content: center;
     align-items: center;;
     i{
+        cursor: pointer;
         font-size:20px;
         color:#fff;
     }
@@ -56,7 +57,7 @@ header{
         margin:20px;
     }
     h2{
-        margin: 20px;
+        margin: 30px;
         color:$text-color;
     }
 
@@ -64,9 +65,9 @@ header{
     .bio-img{
         align-items: center;
         justify-content: center;
-        width:280px;
+        width:300px;
         height:300px;
-        border-radius:130px;
+        border-radius:100%;
     }
     p{
         font-size:20px;
@@ -76,13 +77,15 @@ header{
     }
     
     .social-media-icons{
-        margin-top:25px;
+        margin-top:50px;
         align-content: space-around;
         color: $text-color;
+
         // background-color: $text-color;
         svg{
-            width:25px;
-            height:25px;
+            cursor: pointer;
+            width:30px;
+            height:30px;
             margin-left:20px;
             }
         }
@@ -90,7 +93,7 @@ header{
         @media (max-width: 700px){
             padding:20px;
             p{
-               font-size: 18px; 
+               font-size: 24px; 
                width:100%;
 
             }
@@ -108,7 +111,8 @@ header{
         gap:50px;
         .title-about{
             width:700px;
-            h1{
+
+            h2{
                 text-align:left;
                 font-size: 65px;;
             }
@@ -146,7 +150,7 @@ header{
             .title-about{
                 
                 
-                h1{
+                h2{
                     font-size:60px;
                 }
             }
@@ -175,6 +179,18 @@ header{
                    .desc-about{
                     width:100%;
                     padding:20px;
+
+
+                    h2{
+                        font-size:40px;
+                    }
+                    p{
+                        font-size:26px;
+                    }
+                    .chat{
+                        font-size:26px;
+
+                    }
                    }
                 
             }   
@@ -228,13 +244,20 @@ header{
                 border-radius: 20px;
                 width:500px;
                 height:500px;
+                cursor: pointer;
+                &:hover{
+                    transform:scale(1.2);
+                }
             }
+            
         }
 
-        button{
+        a{
+            text-decoration: none;
+            border:1px solid white;
             color:$text-color;
             background-color: $background-color;
-            // width:170px;
+            cursor:pointer;
             margin:auto;
             margin-bottom: 50px;
             font-size: 20px;
@@ -244,6 +267,7 @@ header{
                 background-color: $text-color;
                 color:$background-color;
             }
+         
         }
 
 
@@ -252,7 +276,10 @@ header{
             .pictures-gallery{
                 
                 img{
-                    width:100%;
+                    width:80%;
+                    height:400px;
+             
+
                 }
            }
         }
@@ -315,6 +342,9 @@ header{
             flex-direction: column;
             padding:20px;   
             gap:20px;
+            p{
+                font-size:26px;
+            }
             .motivation-desc{
                 width: 100%;
                 margin-bottom:40px;
@@ -322,6 +352,7 @@ header{
             .desc-signature{
                 width: 100%;
 
+                
             }
         }
 
@@ -337,7 +368,7 @@ header{
         text-align: center;
         margin-bottom:10vh;
 
-        h1{
+        h4{
             font-size:60px;
         }
 
@@ -351,7 +382,8 @@ header{
             margin:auto;
             width:160px;
             height:160px;
-            border-radius: 80px;
+            border-radius:100%;
+
     }
         hr{
             width:200px;
@@ -372,19 +404,48 @@ header{
             font-size:17px;
             margin:5px;
         }
+
+        @media (max-width: 600px) {
+            
+           p{
+            font-size:24px;
+           }
+        }
     }
 
 
     //Footer
     .footer{
+        padding:50px;
         color:$text-color;
         background-color: #383838;
-        height:130px;
+        height:200px;
         display:flex;
+        font-size:18px;
         justify-content: center;
         align-items: center;
-        p{
-            text-align: center;
-            width:230px;
+        
+        // li{
+        //     display:flex;
+        //     list-style-type: none;
+        //     text-align: center;
+        //     line-height:2.5;
+        // }
+        a{
+            text-decoration: none;
+            margin-left:25px;
+            font-size: 20px;
+            color:$text-color;
         }
+
+
+        @media (max-width: 600px) {
+       
+
+            flex-direction: column;
+            line-height: 1.5;
+            a{
+                margin-top:5px;
+            }
+         }
     }

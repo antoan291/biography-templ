@@ -17,6 +17,7 @@ header {
   align-items: center;
 }
 header i {
+  cursor: pointer;
   font-size: 20px;
   color: #fff;
 }
@@ -37,15 +38,15 @@ header i {
   margin: 20px;
 }
 .biography-information h2 {
-  margin: 20px;
+  margin: 30px;
   color: #fff;
 }
 .biography-information .bio-img {
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 300px;
   height: 300px;
-  border-radius: 130px;
+  border-radius: 100%;
 }
 .biography-information p {
   font-size: 20px;
@@ -54,13 +55,14 @@ header i {
   text-align: justify;
 }
 .biography-information .social-media-icons {
-  margin-top: 25px;
+  margin-top: 50px;
   align-content: space-around;
   color: #fff;
 }
 .biography-information .social-media-icons svg {
-  width: 25px;
-  height: 25px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
 @media (max-width: 700px) {
@@ -68,7 +70,7 @@ header i {
     padding: 20px;
   }
   .biography-information p {
-    font-size: 18px;
+    font-size: 24px;
     width: 100%;
   }
 }
@@ -83,7 +85,7 @@ header i {
 .about-us .title-about {
   width: 700px;
 }
-.about-us .title-about h1 {
+.about-us .title-about h2 {
   text-align: left;
   font-size: 65px;
 }
@@ -114,7 +116,7 @@ header i {
   .about-us {
     padding: 20px;
   }
-  .about-us .title-about h1 {
+  .about-us .title-about h2 {
     font-size: 60px;
   }
 }
@@ -137,6 +139,15 @@ header i {
   .about-us .desc-about {
     width: 100%;
     padding: 20px;
+  }
+  .about-us .desc-about h2 {
+    font-size: 40px;
+  }
+  .about-us .desc-about p {
+    font-size: 26px;
+  }
+  .about-us .desc-about .chat {
+    font-size: 26px;
   }
 }
 
@@ -181,16 +192,23 @@ header i {
   border-radius: 20px;
   width: 500px;
   height: 500px;
+  cursor: pointer;
 }
-.gallery-container button {
+.gallery-container .pictures-gallery img:hover {
+  transform: scale(1.2);
+}
+.gallery-container a {
+  text-decoration: none;
+  border: 1px solid white;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
   margin: auto;
   margin-bottom: 50px;
   font-size: 20px;
   padding: 20px 80px 20px 80px;
 }
-.gallery-container button:hover {
+.gallery-container a:hover {
   background-color: #fff;
   color: #000;
 }
@@ -199,7 +217,8 @@ header i {
     padding: 20px;
   }
   .gallery-container .pictures-gallery img {
-    width: 100%;
+    width: 80%;
+    height: 400px;
   }
 }
 @media (max-width: 700px) {
@@ -260,6 +279,9 @@ header i {
     padding: 20px;
     gap: 20px;
   }
+  .motivation p {
+    font-size: 26px;
+  }
   .motivation .motivation-desc {
     width: 100%;
     margin-bottom: 40px;
@@ -277,7 +299,7 @@ header i {
   text-align: center;
   margin-bottom: 10vh;
 }
-.contact-us h1 {
+.contact-us h4 {
   font-size: 60px;
 }
 .contact-us .phone-inf {
@@ -290,7 +312,7 @@ header i {
   margin: auto;
   width: 160px;
   height: 160px;
-  border-radius: 80px;
+  border-radius: 100%;
 }
 .contact-us hr {
   width: 200px;
@@ -310,16 +332,34 @@ header i {
   font-size: 17px;
   margin: 5px;
 }
+@media (max-width: 600px) {
+  .contact-us p {
+    font-size: 24px;
+  }
+}
 
 .footer {
+  padding: 50px;
   color: #fff;
   background-color: #383838;
-  height: 130px;
+  height: 200px;
   display: flex;
+  font-size: 18px;
   justify-content: center;
   align-items: center;
 }
-.footer p {
-  text-align: center;
-  width: 230px;
+.footer a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .footer a {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
