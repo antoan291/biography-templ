@@ -37,15 +37,15 @@ header i {
   margin: 20px;
 }
 .biography-information h2 {
-  margin: 20px;
+  margin: 30px;
   color: #fff;
 }
 .biography-information .bio-img {
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 300px;
   height: 300px;
-  border-radius: 130px;
+  border-radius: 100%;
 }
 .biography-information p {
   font-size: 20px;
@@ -54,7 +54,7 @@ header i {
   text-align: justify;
 }
 .biography-information .social-media-icons {
-  margin-top: 25px;
+  margin-top: 35px;
   align-content: space-around;
   color: #fff;
 }
@@ -68,7 +68,7 @@ header i {
     padding: 20px;
   }
   .biography-information p {
-    font-size: 18px;
+    font-size: 24px;
     width: 100%;
   }
 }
@@ -181,16 +181,23 @@ header i {
   border-radius: 20px;
   width: 500px;
   height: 500px;
+  cursor: pointer;
 }
-.gallery-container button {
+.gallery-container .pictures-gallery img:hover {
+  transform: scale(1.2);
+}
+.gallery-container a {
+  text-decoration: none;
+  border: 1px solid white;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
   margin: auto;
   margin-bottom: 50px;
   font-size: 20px;
   padding: 20px 80px 20px 80px;
 }
-.gallery-container button:hover {
+.gallery-container a:hover {
   background-color: #fff;
   color: #000;
 }
@@ -290,7 +297,7 @@ header i {
   margin: auto;
   width: 160px;
   height: 160px;
-  border-radius: 80px;
+  border-radius: 100%;
 }
 .contact-us hr {
   width: 200px;
